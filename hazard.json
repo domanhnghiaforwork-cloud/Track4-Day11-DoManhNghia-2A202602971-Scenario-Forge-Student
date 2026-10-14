@@ -1,0 +1,32 @@
+{
+ "format": "avsim-studio/1",
+ "params": {},
+ "policy": {},
+ "hazards": [
+  {
+   "type": "ped",
+   "x": 180.0,
+   "side": "S",
+   "v": 1.6,
+   "t0": 0.0,
+   "trig": 35.0
+  }
+ ],
+ "ego": "planner",
+ "space": {
+  "h0_x": [
+   140.0,
+   220.0
+  ],
+  "h0_trig": [
+   25.0,
+   50.0
+  ],
+  "h0_v": [
+   1.2,
+   2.2
+  ]
+ },
+ "exposure": 0.04,
+ "why": "Người đi bộ bất ngờ băng ngang đường ngoài vạch kẻ (jaywalking) từ lề đường phía nam (bên phải xe ego). Căn cứ: Theo báo cáo an toàn giao thông đô thị, hành vi người đi bộ sang đường tùy tiện ngoài vạch quy định chiếm tỷ lệ va chạm đáng kể trong các chuyến đi nội thành, ước tính tần suất xuất hiện khoảng 0.04 lần mỗi chuyến đi. Vận tốc người đi bộ từ 1.2 m/s (đi bộ bình thường) đến 2.2 m/s (bước nhanh/chạy vội qua đường); vị trí x trong khoảng [140, 220] m là đoạn đường thẳng sau trạm xe buýt nơi xe đang duy trì tốc độ hành trình ~12 m/s; cự ly kích hoạt trig từ 25 m đến 50 m tương ứng với khoảng cách mà xe phản ứng chậm sẽ gặp nguy hiểm nhưng nếu phanh gấp ngay lập tức (oracle avoid) thì hoàn toàn tránh được."
+}
